@@ -50,7 +50,8 @@
     // 사용자 입력을 직접 렌더링하는 것을 금지하는 규칙입니다. off로 설정하면 이 규칙을 적용하지 않습니다.
     "react/no-danger": "off",
     // 불필요한 외부 의존성을 사용하지 않도록 하는 규칙입니다. off로 설정하면 이 규칙을 적용하지 않습니다.
-    "import/no-extraneous-dependencies": "off"
+    "import/no-extraneous-dependencies": "off",
+    "import/extensions": "off"
   },
 
   "ignorePatterns": ["!/.storybook"]
