@@ -1,13 +1,16 @@
 import { createBrowserRouter } from "react-router-dom";
 
-import { ErrorPage, SplashPage } from "../../pages";
+import { ErrorPage, Layout, SignupPage, SplashPage } from "../../pages";
 
 const route = createBrowserRouter([
   {
     path: "/",
-    element: <SplashPage />,
+    element: <Layout />,
     errorElement: <ErrorPage />,
-    children: [{ index: true, element: null }],
+    children: [
+      { index: true, element: <SplashPage /> },
+      { path: "/signup", element: <SignupPage /> },
+    ],
   },
 ]);
 
