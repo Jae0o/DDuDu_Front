@@ -5,6 +5,7 @@
     "airbnb",
     "airbnb-typescript",
     "plugin:prettier/recommended",
+    "plugin:storybook/recommended",
     "prettier"
   ],
   "parserOptions": {
@@ -13,28 +14,44 @@
   },
 
   "rules": {
-    // "new-cap": "off",
-    // "react/jsx-no-useless-fragment": "off",
-    // "jsx-a11y/label-has-associated-control": "off",
-    // "react-refresh/only-export-components": "off",
-    "react/react-in-jsx-scope": "off"
-    // "react/function-component-definition": [
-    //   2,
-    //   {
-    //     "namedComponents": "arrow-function"
-    //   }
-    // ],
-    // "react/jsx-props-no-spreading": "off",
-    // "import/no-cycle": "off",
-    // "import/prefer-default-export": "off",
-    // "consistent-return": "off",
-    // "@typescript-eslint/no-unused-expressions": "off",
-    // "global-require": 0,
-    // "import/order": "off",
-    // "react/require-default-props": "off",
-    // "react/no-danger": "off"
-    // "import/no-extraneous-dependencies": "off"
+    // 함수 이름이 대문자로 시작하는지 여부를 확인하는 규칙입니다. off로 설정하면 이 규칙을 적용하지 않습니다.
+    "new-cap": "off",
+    // React 컴포넌트에서 불필요한 Fragment 사용을 방지하는 규칙입니다. off로 설정하면 이 규칙을 적용하지 않습니다.
+    "react/jsx-no-useless-fragment": "off",
+    // 라벨 요소에 연관된 폼 컨트롤 요소가 있는지 확인하는 규칙입니다. off로 설정하면 이 규칙을 적용하지 않습니다.
+    "jsx-a11y/label-has-associated-control": "off",
+    // React Refresh 기능을 위한 규칙입니다. off로 설정하면 이 규칙을 적용하지 않습니다.
+    "react-refresh/only-export-components": "off",
+    // JSX 문법을 사용할 때 React 모듈이 import되어 있는지 확인하는 규칙입니다. off로 설정하면 이 규칙을 적용하지 않습니다.
+    "react/react-in-jsx-scope": "off",
+    // 함수형 React 컴포넌트 정의 방식을 화살표 함수로 강제하는 규칙입니다.
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function"
+      }
+    ],
+    // JSX 요소에 props를 spread 연산자로 전달하는 것을 금지하는 규칙입니다. off로 설정하면 이 규칙을 적용하지 않습니다.
+    "react/jsx-props-no-spreading": "off",
+    // 순환 종속성을 금지하는 규칙입니다. off로 설정하면 이 규칙을 적용하지 않습니다.
+    "import/no-cycle": "off",
+    // 모듈에서 기본 내보내기(default export)를 사용하도록 강제하는 규칙입니다. off로 설정하면 이 규칙을 적용하지 않습니다.
+    "import/prefer-default-export": "off",
+    // 함수에서 일관된 반환 값을 사용하도록 강제하는 규칙입니다. off로 설정하면 이 규칙을 적용하지 않습니다.
+    "consistent-return": "off",
+    // TypeScript에서 사용되지 않는 표현식을 금지하는 규칙입니다. off로 설정하면 이 규칙을 적용하지 않습니다.
+    "@typescript-eslint/no-unused-expressions": "off",
+    // require() 함수 사용을 금지하는 규칙입니다. 0으로 설정하면 이 규칙을 적용하지 않습니다.
+    "global-require": 0,
+    // 모듈 import 순서를 강제하는 규칙입니다. off로 설정하면 이 규칙을 적용하지 않습니다.
+    "import/order": "off",
+    // 함수형 React 컴포넌트에서 defaultProps를 정의하도록 강제하는 규칙입니다. off로 설정하면 이 규칙을 적용하지 않습니다.
+    "react/require-default-props": "off",
+    // 사용자 입력을 직접 렌더링하는 것을 금지하는 규칙입니다. off로 설정하면 이 규칙을 적용하지 않습니다.
+    "react/no-danger": "off",
+    // 불필요한 외부 의존성을 사용하지 않도록 하는 규칙입니다. off로 설정하면 이 규칙을 적용하지 않습니다.
+    "import/no-extraneous-dependencies": "off"
   },
 
-  "ignorePatterns": ["postcss.config.js"]
+  "ignorePatterns": ["!/.storybook"]
 }
