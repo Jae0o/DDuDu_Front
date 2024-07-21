@@ -30,7 +30,8 @@
     "format": "prettier --cache --write .",
     "lint": "eslint --cache .",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_da1b3d7125ecdbf"
   },
   "eslintConfig": {
     "extends": [
@@ -66,6 +67,7 @@
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@types/uuid": "^10.0.0",
     "@typescript-eslint/parser": "^7.16.1",
+    "chromatic": "^11.5.6",
     "eslint": "^8.57.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^18.0.0",
